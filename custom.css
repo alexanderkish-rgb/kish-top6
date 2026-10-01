@@ -15,9 +15,7 @@ body {
     background-color: var(--color-dark);
 }
 /******** HERO ********/
-
 /******** HERO ********/
-
 /******** HERO ********/
 
 .hero-title {
@@ -34,4 +32,12 @@ body {
     background: url("https://lh3.googleusercontent.com/TYfsjEJym1KvQDlfIriNc6HJgq7ZW9PHTq2-AMureb7DijtiJ5t1cbBE8P0K8BelZAEnoPuTrAt7Z6s=w2880-h1620-l90-rj");
     background-position: center;
     background-size: cover;
+}
+
+/******** NAVBAR ********/
+/******** NAVBAR ********/
+/******** NAVBAR ********/
+.site-nav {
+    background-color: var(--color-dark);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
