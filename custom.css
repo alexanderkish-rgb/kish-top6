@@ -1,43 +1,387 @@
-/**
-    COLORS:
-    https://coolors.co/palette/134074-13315c-0b2545-8da9c4-eef4ed
-    */
 
-[data-theme='Deep'] {
-    --color-primary: #13315C;
-    --color-accent: #8da9c4;
-    --color-neutral: #eef4ed;
-    --color-dark: #0b2545; 
-    --color-red: #800020;
+/* =========================
+   COLOR PALETTE
+========================= */
+
+[data-theme="Deep"] {
+  --color-primary: #134074;
+  --color-secondary: #13315c;
+  --color-accent: #8da9c4;
+  --color-neutral: #eef4ed;
+  --color-dark: #0b2545;
+  --color-red: #800020;
+
+  /* DaisyUI theme colors */
+  --color-base-100: #0b2545;
+  --color-base-200: #13315c;
+  --color-base-300: #134074;
+  --color-base-content: #eef4ed;
+
+  --color-primary-content: #eef4ed;
+  --color-secondary-content: #eef4ed;
+  --color-accent-content: #0b2545;
+}
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--color-dark);
-}
-/******** HERO ********/
-/******** HERO ********/
-/******** HERO ********/
-
-.hero-title {
-    color: var(--color-neutral);
-    text-shadow: 10px 10px 20px rgba(83, 14, 14, 0.959);
+  background-color: var(--color-dark);
+  color: var(--color-neutral);
 }
 
-.hero-support {
-    color: var(--color-accent);
-    text-shadow: 10px 10px 20px rgba(150, 43, 43, 0.73);
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.site-nav {
+  background-color: rgba(11, 37, 69, 0.96);
+  border-bottom: 1px solid rgba(141, 169, 196, 0.25);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.site-nav-brand {
+  color: var(--color-neutral);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.site-nav-brand:hover {
+  color: var(--color-accent);
+}
+
+.site-nav-links a:not(.btn) {
+  color: var(--color-neutral);
+  transition: color 0.3s ease;
+}
+
+.site-nav-links a:not(.btn):hover {
+  color: var(--color-accent);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  border: 1px solid var(--color-accent);
+  font-weight: 700;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-neutral);
+  border-color: var(--color-neutral);
+  color: var(--color-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(141, 169, 196, 0.3);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-stage {
+  position: relative;
+  background-color: var(--color-dark);
+  overflow: hidden;
 }
 
 .hero-mesh {
-    background: url("https://lh3.googleusercontent.com/TYfsjEJym1KvQDlfIriNc6HJgq7ZW9PHTq2-AMureb7DijtiJ5t1cbBE8P0K8BelZAEnoPuTrAt7Z6s=w2880-h1620-l90-rj");
-    background-position: center;
-    background-size: cover;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(11, 37, 69, 0.25),
+      rgba(11, 37, 69, 0.55),
+      rgba(11, 37, 69, 0.95)
+    ),
+    url("https://lh3.googleusercontent.com/TYfsjEJym1KvQDlfIriNc6HJgq7ZW9PHTq2-AMureb7DijtiJ5t1cbBE8P0K8BelZAEnoPuTrAt7Z6s=w2880-h1620-l90-rj");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/******** NAVBAR ********/
-/******** NAVBAR ********/
-/******** NAVBAR ********/
-.site-nav {
-    background-color: var(--color-dark);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.hero-title {
+  color: var(--color-neutral);
+  text-shadow: 4px 6px 18px rgba(0, 0, 0, 0.85);
+}
+
+.hero-mark {
+  color: var(--color-accent);
+}
+
+.hero-support {
+  color: var(--color-neutral);
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.85);
+}
+
+.hero-badge {
+  background-color: var(--color-red);
+  color: var(--color-neutral);
+  border: 1px solid rgba(238, 244, 237, 0.3);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-cue-dot {
+  background-color: var(--color-accent);
+}
+
+/* =========================
+   ALBUM COUNTDOWN SECTION
+========================= */
+
+.list-wrap {
+  background:
+    linear-gradient(
+      180deg,
+      #0b2545 0%,
+      #13315c 45%,
+      #0b2545 100%
+    );
+  color: var(--color-neutral);
+}
+
+.list-head {
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--color-neutral);
+  font-weight: 800;
+}
+
+.section-support {
+  color: var(--color-accent);
+  line-height: 1.8;
+}
+
+/* =========================
+   ALBUM CARDS
+========================= */
+
+.entry-card {
+  background:
+    linear-gradient(
+      145deg,
+      #134074,
+      #13315c 65%,
+      #0b2545
+    );
+
+  border: 1px solid rgba(141, 169, 196, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.entry-body {
+  color: var(--color-neutral);
+  padding: 24px;
+}
+
+.entry-title {
+  color: var(--color-neutral);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.entry-note {
+  color: #d6e3ef;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* =========================
+   ALBUM IMAGES
+========================= */
+
+.shot {
+  background-color: var(--color-dark);
+  overflow: hidden;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.entry-card:hover .shot img {
+  transform: scale(1.04);
+}
+
+.shot-cap {
+  background-color: var(--color-dark);
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+/* =========================
+   RANK NUMBERS
+========================= */
+
+.rank {
+  color: var(--color-accent);
+  font-weight: 900;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   NUMBER ONE ALBUM
+========================= */
+
+.entry-one .entry-card {
+  background:
+    linear-gradient(
+      135deg,
+      #134074 0%,
+      #13315c 55%,
+      #0b2545 100%
+    );
+
+  border: 2px solid var(--color-accent);
+
+  box-shadow:
+    0 0 30px rgba(141, 169, 196, 0.2),
+    0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.entry-one .rank {
+  color: var(--color-neutral);
+  text-shadow: 0 0 20px rgba(141, 169, 196, 0.5);
+}
+
+.entry-one .entry-title {
+  color: var(--color-neutral);
+}
+
+.entry-one .eyebrow {
+  color: var(--color-accent);
+}
+
+.entry-one .shot-cap {
+  background-color: var(--color-red);
+  color: white;
+  font-weight: 800;
+}
+
+/* =========================
+   METHOD SECTION
+========================= */
+
+.method {
+  background-color: var(--color-secondary);
+  border-top: 1px solid rgba(141, 169, 196, 0.25);
+  border-bottom: 1px solid rgba(141, 169, 196, 0.25);
+}
+
+.method-inner {
+  color: var(--color-neutral);
+}
+
+.method-h {
+  color: var(--color-neutral);
+  font-weight: 800;
+}
+
+.method-cols > div {
+  background-color: rgba(11, 37, 69, 0.5);
+  border: 1px solid rgba(141, 169, 196, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-foot {
+  background-color: var(--color-dark);
+  color: var(--color-neutral);
+  border-top: 1px solid rgba(141, 169, 196, 0.25);
+}
+
+.site-foot-title {
+  color: var(--color-neutral);
+  font-weight: 800;
+}
+
+.site-foot .section-support {
+  color: var(--color-accent);
+}
+
+.credits {
+  color: var(--color-accent);
+}
+
+.credits a {
+  color: var(--color-neutral);
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+}
+
+.credits a:hover {
+  color: var(--color-accent);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .entry-body {
+    padding: 18px;
+  }
+
+  .entry-note {
+    font-size: 0.95rem;
+  }
+
+  .method-cols > div {
+    padding: 16px;
+  }
+
+  .hero-title {
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.85);
+  }
 }
