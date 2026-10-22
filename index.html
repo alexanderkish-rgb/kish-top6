@@ -1,17 +1,24 @@
 
 <!doctype html>
 <html lang="en" data-theme="Deep">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Top 6 Albums of 2026</title>
-  <meta name="description" content="My ranking of the six best albums of 2026, including chart achievements and streaming milestones." />
 
+  <meta
+    name="description"
+    content="My ranking of the six best albums of 2026."
+  />
+
+  <!-- DAISYUI AND TAILWIND -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+  <!-- CUSTOM STYLES -->
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="custom.css" />
@@ -21,31 +28,45 @@
 
   <a class="skip" href="#list">Skip to the list</a>
 
-  <!-- NAVIGATION -->
+  <!-- ================= NAVIGATION ================= -->
+
   <nav class="site-nav" data-nav>
     <div class="site-nav-inner">
-      <a class="site-nav-brand" href="#top">Top 6 Albums in 2026</a>
+
+      <a class="site-nav-brand" href="#top">
+        Top 6 Albums in 2026
+      </a>
 
       <div class="site-nav-links">
         <a href="#list">The list</a>
+        <a href="#honorable-mentions">Honorable Mentions</a>
         <a href="#method">Method</a>
-        <a class="btn btn-primary btn-sm" href="#one">Number one</a>
+        <a class="btn btn-primary btn-sm" href="#one">
+          Number one
+        </a>
       </div>
+
     </div>
   </nav>
 
-  <!-- HERO -->
+
+  <!-- ================= HERO ================= -->
+
   <header class="hero-stage" id="top">
+
     <div class="hero-mesh" aria-hidden="true"></div>
 
     <div class="hero-body">
+
       <p class="badge badge-lg hero-badge">
         Album of the Year
       </p>
 
       <h1 class="hero-title">
         The Six Best
-        <span class="hero-mark">Albums of 2026</span>
+        <span class="hero-mark">
+          Albums of 2026
+        </span>
       </h1>
 
       <p class="hero-support">
@@ -57,17 +78,153 @@
       <a class="btn btn-primary btn-lg" href="#list">
         Explore Albums!
       </a>
+
     </div>
 
-    <a class="hero-cue" href="#list" aria-hidden="true" tabindex="-1">
+    <a
+      class="hero-cue"
+      href="#list"
+      aria-hidden="true"
+      tabindex="-1"
+    >
       <span class="hero-cue-dot"></span>
     </a>
+
   </header>
 
-  <!-- ALBUM RANKINGS -->
+
+  <!-- ============== HONORABLE MENTIONS ============== -->
+
+  <section
+    id="honorable-mentions"
+    class="mx-auto max-w-6xl px-4 py-12"
+  >
+
+    <div class="text-center mb-8">
+
+      <p class="eyebrow">
+        Almost Made the List
+      </p>
+
+      <h2 class="section-title">
+        Honorable Mentions
+      </h2>
+
+      <p class="section-support">
+        These albums didn't quite make my Top 6,
+        but they still deserve some recognition.
+      </p>
+
+    </div>
+
+    <!-- DAISYUI CAROUSEL -->
+
+    <div class="carousel w-full rounded-2xl bg-base-200">
+
+      <!-- KATSEYE -->
+
+      <div id="slide1" class="carousel-item relative w-full">
+
+        <img
+          src="https://images.genius.com/af93fb270254c6407cb6fe5ea26bc6d6.1000x1000x1.png"
+          alt="WILD by KATSEYE"
+          class="w-full h-96 object-contain"
+        />
+
+        <div class="absolute bottom-0 w-full bg-black/70 p-6 text-white">
+          <h3 class="text-2xl font-bold">WILD</h3>
+          <p>KATSEYE</p>
+        </div>
+
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+
+      </div>
+
+
+      <!-- GRACIE ABRAMS -->
+
+      <div id="slide2" class="carousel-item relative w-full">
+
+        <img
+          src="https://images.genius.com/7bdef564a8d0ecef80cdf3d4674d122b.1000x1000x1.png"
+          alt="Daughter from Hell by Gracie Abrams"
+          class="w-full h-96 object-contain"
+        />
+
+        <div class="absolute bottom-0 w-full bg-black/70 p-6 text-white">
+          <h3 class="text-2xl font-bold">Daughter from Hell</h3>
+          <p>Gracie Abrams</p>
+        </div>
+
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+
+      </div>
+
+
+      <!-- HARRY STYLES -->
+
+      <div id="slide3" class="carousel-item relative w-full">
+
+        <img
+          src="https://images.genius.com/305d8d00f583f57d32b1bc0c58348382.1000x1000x1.png"
+          alt="Kiss All the Time. Disco, Occasionally. by Harry Styles"
+          class="w-full h-96 object-contain"
+        />
+
+        <div class="absolute bottom-0 w-full bg-black/70 p-6 text-white">
+          <h3 class="text-2xl font-bold">
+            Kiss All the Time. Disco, Occasionally.
+          </h3>
+          <p>Harry Styles</p>
+        </div>
+
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+
+      </div>
+
+
+      <!-- BEABADOOBEE -->
+
+      <div id="slide4" class="carousel-item relative w-full">
+
+        <img
+          src="https://images.genius.com/83683d0b13b394be73ddc4c95d1b961d.1000x1000x1.png"
+          alt="Pylon by beabadoobee"
+          class="w-full h-96 object-contain"
+        />
+
+        <div class="absolute bottom-0 w-full bg-black/70 p-6 text-white">
+          <h3 class="text-2xl font-bold">Pylon</h3>
+          <p>beabadoobee</p>
+        </div>
+
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= ALBUM RANKINGS ================= -->
+
   <main id="list" class="list-wrap">
 
     <header class="list-head" data-reveal>
+
       <p class="eyebrow">The countdown</p>
 
       <h2 class="section-title">
@@ -79,15 +236,20 @@
         production, songwriting, and achievements
         throughout 2026.
       </p>
+
     </header>
+
 
     <ol class="list-grid">
 
+
       <!-- NUMBER 6: BRUNO MARS -->
+
       <li class="entry" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/04159db08b6ef156e3418efa558af170.1000x1000x1.png"
               width="900"
@@ -95,12 +257,15 @@
               loading="lazy"
               alt="The Romantic album cover by Bruno Mars"
             />
+
             <figcaption class="shot-cap">
               The Romantic — Bruno Mars
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span class="rank" aria-hidden="true">06</span>
 
             <h3 class="entry-title">
@@ -111,27 +276,26 @@
             <p class="eyebrow">Bruno Mars</p>
 
             <p class="entry-note">
-              Released in February 2026, The Romantic is
-              Bruno Mars' fourth solo studio album.
-              It debuted at number one on the Billboard 200,
-              earning 186,000 equivalent album units
-              in its first week. The album also topped
-              Billboard's Top Streaming Albums chart,
-              while its hit single "I Just Might"
-              reached number one on the Hot 100.
-              The project brings back Bruno's signature
-              mix of soul, romance, and retro pop.
+              The Romantic is Bruno Mars' fourth solo studio album,
+              bringing back his signature mix of soul, romance,
+              and retro pop. The album features smooth vocals,
+              catchy melodies, and a nostalgic sound that
+              highlights his musical style.
             </p>
+
           </div>
 
         </article>
       </li>
 
+
       <!-- NUMBER 5: SIENNA SPIRO -->
+
       <li class="entry" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/bff05df7f16e7861f7257eeaeaa3d4b1.1000x1000x1.png"
               width="900"
@@ -139,12 +303,15 @@
               loading="lazy"
               alt="Visitor album cover by Sienna Spiro"
             />
+
             <figcaption class="shot-cap">
               Visitor — Sienna Spiro
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span class="rank" aria-hidden="true">05</span>
 
             <h3 class="entry-title">
@@ -156,26 +323,25 @@
 
             <p class="entry-note">
               Visitor is Sienna Spiro's debut studio album,
-              released in July 2026. The ten-track project
-              explores heartbreak, temporary relationships,
-              and the fear of losing people. Before the
-              album's release, three of her singles,
-              "Die on This Hill," "The Visitor," and
-              "You Stole the Show," had all appeared
-              on the Billboard Hot 100. Her powerful
-              vocals and emotional songwriting helped
-              establish her as one of pop's rising stars.
+              exploring heartbreak, relationships, and the
+              fear of losing people. Her powerful vocals
+              and emotional songwriting make the album
+              feel personal and memorable.
             </p>
+
           </div>
 
         </article>
       </li>
 
+
       <!-- NUMBER 4: MELANIE MARTINEZ -->
+
       <li class="entry" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/aeb7567ea6fde6c1fb3a93a3ee5ea048.1000x1000x1.png"
               width="900"
@@ -183,12 +349,15 @@
               loading="lazy"
               alt="HADES album cover by Melanie Martinez"
             />
+
             <figcaption class="shot-cap">
               HADES — Melanie Martinez
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span class="rank" aria-hidden="true">04</span>
 
             <h3 class="entry-title">
@@ -199,29 +368,26 @@
             <p class="eyebrow">Melanie Martinez</p>
 
             <p class="entry-note">
-              Released in March 2026, HADES is Melanie
-              Martinez's fourth studio album. The
-              18-track project explores control,
-              exploitation, and the darker sides
-              of society through alternative pop
-              and experimental production.
-              The album reportedly earned around
-              11 million Spotify streams on its
-              opening day, making it one of her
-              strongest streaming debuts. Songs
-              like "POSSESSION" and "DISNEY PRINCESS"
-              helped introduce its dystopian concept.
+              HADES is Melanie Martinez's fourth studio album,
+              exploring themes of control, exploitation,
+              and the darker sides of society. The album
+              combines alternative pop with experimental
+              production to create a dark and unique sound.
             </p>
+
           </div>
 
         </article>
       </li>
 
+
       <!-- NUMBER 3: RAYE -->
+
       <li class="entry" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/8be422c01f078e63eea016df822ac059.1000x1000x1.png"
               width="900"
@@ -229,12 +395,15 @@
               loading="lazy"
               alt="THIS MUSIC MAY CONTAIN HOPE album cover by RAYE"
             />
+
             <figcaption class="shot-cap">
               THIS MUSIC MAY CONTAIN HOPE. — RAYE
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span class="rank" aria-hidden="true">03</span>
 
             <h3 class="entry-title">
@@ -245,29 +414,26 @@
             <p class="eyebrow">RAYE</p>
 
             <p class="entry-note">
-              Released in March 2026, this is RAYE's
-              second studio album. The 17-track
-              project blends jazz, soul, R&B, and pop
-              while exploring heartbreak, healing,
-              and personal growth. It became RAYE's
-              first number-one album on the UK
-              Official Albums Chart and also topped
-              the UK's Albums Streaming Chart.
-              Featuring "WHERE IS MY HUSBAND!"
-              and a collaboration with Hans Zimmer,
-              the album shows her versatility
-              as a singer and songwriter.
+              THIS MUSIC MAY CONTAIN HOPE. is RAYE's second
+              studio album, blending jazz, soul, R&B, and pop.
+              The album explores heartbreak, healing, and
+              personal growth while highlighting her
+              powerful vocals and versatility.
             </p>
+
           </div>
 
         </article>
       </li>
 
+
       <!-- NUMBER 2: OLIVIA RODRIGO -->
+
       <li class="entry" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/5daebf09ec9470af00d7d708836a59e7.1000x1000x1.png"
               width="900"
@@ -275,12 +441,15 @@
               loading="lazy"
               alt="You Seem Pretty Sad for a Girl So in Love album cover by Olivia Rodrigo"
             />
+
             <figcaption class="shot-cap">
               Olivia Rodrigo — Third Studio Album
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span class="rank" aria-hidden="true">02</span>
 
             <h3 class="entry-title">
@@ -291,28 +460,26 @@
             <p class="eyebrow">Olivia Rodrigo</p>
 
             <p class="entry-note">
-              Released in June 2026, this is Olivia
-              Rodrigo's third studio album, following
-              SOUR and GUTS. The 14-track project
-              explores love, uncertainty, and the
-              complicated emotions that come with
-              growing up. Reuniting with producer
-              Dan Nigro, Olivia continues developing
-              her emotional songwriting and pop-rock
-              sound. The album marks another major
-              chapter in her career, showing a more
-              mature perspective on relationships.
+              you seem pretty sad for a girl so in love
+              is Olivia Rodrigo's third studio album,
+              following SOUR and GUTS. The album explores
+              love, uncertainty, and growing up through
+              emotional lyrics and her signature pop-rock sound.
             </p>
+
           </div>
 
         </article>
       </li>
 
-      <!-- NUMBER 1: ADELA -->
+
+      <!-- NUMBER 1: ADÉLA -->
+
       <li class="entry entry-one" id="one" data-reveal>
         <article class="entry-card">
 
           <figure class="shot">
+
             <img
               src="https://images.genius.com/e28585ffad5e5cc738bb5668db38be56.1000x1000x1.png"
               width="900"
@@ -320,19 +487,24 @@
               loading="lazy"
               alt="PRIMA album cover by ADÉLA"
             />
+
             <figcaption class="shot-cap">
               PRIMA — ADÉLA
             </figcaption>
+
           </figure>
 
           <div class="entry-body">
+
             <span
               class="rank"
               aria-hidden="true"
               data-count-from="6"
             >01</span>
 
-            <p class="eyebrow">Album of the Year</p>
+            <p class="eyebrow">
+              Album of the Year
+            </p>
 
             <h3 class="entry-title">
               <span class="sr-only">Number one: </span>
@@ -342,35 +514,27 @@
             <p class="eyebrow">ADÉLA</p>
 
             <p class="entry-note">
-              PRIMA is ADÉLA's debut studio album,
-              released in September 2026, and it
-              quickly became her biggest career
-              milestone. The album reached number
-              one in the Netherlands and Belgium,
-              number two in the UK, and the top
-              ten in ten countries. It also topped
-              Spotify's Global and US Top Albums
-              Debut charts. By October 2, the album
-              had surpassed 400 million Spotify
-              streams. Its breakout single
-              "Ain't In LA" reached the Billboard
-              Hot 100 and climbed to number 57,
-              helping introduce ADÉLA to a much
-              larger international audience.
-              With bold production, confident
-              lyrics, and an unforgettable sound,
-              PRIMA earns my number one spot.
+              PRIMA is ADÉLA's debut studio album, featuring
+              bold production, confident lyrics, and an
+              energetic pop sound. The album highlights
+              her unique style and growing success,
+              making it my favorite release of 2026.
             </p>
+
           </div>
 
         </article>
       </li>
 
     </ol>
+
   </main>
 
-  <!-- METHOD -->
+
+  <!-- ================= METHOD ================= -->
+
   <section id="method" class="method">
+
     <div class="method-inner" data-reveal>
 
       <p class="eyebrow">Method</p>
@@ -382,7 +546,9 @@
       <div class="method-cols">
 
         <div>
-          <h3 class="method-h">What I judged on</h3>
+          <h3 class="method-h">
+            What I judged on
+          </h3>
 
           <p class="section-support">
             I ranked these albums based on their
@@ -392,7 +558,9 @@
         </div>
 
         <div>
-          <h3 class="method-h">What I ignored</h3>
+          <h3 class="method-h">
+            What I ignored
+          </h3>
 
           <p class="section-support">
             Streaming numbers and chart positions
@@ -403,7 +571,9 @@
         </div>
 
         <div>
-          <h3 class="method-h">Where I could be wrong</h3>
+          <h3 class="method-h">
+            Where I could be wrong
+          </h3>
 
           <p class="section-support">
             Music is subjective, and everyone
@@ -415,29 +585,39 @@
         </div>
 
       </div>
+
     </div>
+
   </section>
 
-  <!-- FOOTER -->
+
+  <!-- ================= FOOTER ================= -->
+
   <footer class="site-foot">
+
     <div class="site-foot-inner">
 
       <div>
+
         <p class="site-foot-title">
           Top 6 Albums of 2026
         </p>
 
         <p class="section-support">
-         Some web copy and CSS done by AI.
+          Some web copy and CSS done by AI.
         </p>
 
         <p class="section-support">
           © <span data-year>2026</span> Alexander Kish.
         </p>
+
       </div>
 
       <div>
-        <p class="site-foot-title">Credits</p>
+
+        <p class="site-foot-title">
+          Credits
+        </p>
 
         <ul class="credits">
           <li>Album artwork: Genius</li>
@@ -446,10 +626,15 @@
           <li>Streaming information: Spotify and ChartMasters</li>
           <li>Album information: Apple Music and record labels</li>
         </ul>
+
       </div>
 
     </div>
+
   </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script src="js/reveal.js"></script>
 
