@@ -159,6 +159,7 @@ body {
       #13315c 45%,
       #0b2545 100%
     );
+
   color: var(--color-neutral);
 }
 
@@ -183,6 +184,107 @@ body {
 .section-support {
   color: var(--color-accent);
   line-height: 1.8;
+}
+
+/* =========================
+   HONORABLE MENTIONS
+========================= */
+
+#honorable-mentions {
+  color: var(--color-neutral);
+}
+
+#honorable-mentions .text-center {
+  text-align: center;
+}
+
+#honorable-mentions .eyebrow {
+  text-align: center;
+}
+
+#honorable-mentions .section-title {
+  text-align: center;
+}
+
+/* Center the description under
+   Honorable Mentions */
+
+#honorable-mentions .section-support {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  width: 100%;
+  line-height: 1.8;
+}
+
+/* =========================
+   CENTER COUNTDOWN DESCRIPTION
+========================= */
+
+.list-head {
+  text-align: center;
+}
+
+.list-head .eyebrow {
+  text-align: center;
+}
+
+.list-head .section-title {
+  text-align: center;
+}
+
+/* Center the description under
+   Six albums, worst to best */
+
+.list-head .section-support {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  width: 100%;
+  line-height: 1.8;
+}
+
+/* =========================
+   HONORABLE MENTIONS CAROUSEL
+========================= */
+
+#honorable-mentions .carousel {
+  border: 1px solid rgba(141, 169, 196, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+#honorable-mentions .carousel-item {
+  background-color: var(--color-secondary);
+}
+
+#honorable-mentions .carousel-item img {
+  object-fit: contain;
+}
+
+#honorable-mentions .carousel-item h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+}
+
+#honorable-mentions .carousel-item p {
+  font-family: 'DM Sans', sans-serif;
+}
+
+#honorable-mentions .btn-circle {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  border: 1px solid var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+#honorable-mentions .btn-circle:hover {
+  background-color: var(--color-neutral);
+  border-color: var(--color-neutral);
+  transform: scale(1.05);
 }
 
 /* =========================
@@ -265,6 +367,28 @@ body {
 }
 
 /* =========================
+   PHOTO CREDIT LINKS
+========================= */
+
+.shot-cap a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(141, 169, 196, 0.5);
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.shot-cap a:hover {
+  color: var(--color-neutral);
+  text-decoration-color: var(--color-neutral);
+}
+
+.shot-cap a:focus-visible {
+  outline: 2px solid var(--color-neutral);
+  outline-offset: 3px;
+}
+
+/* =========================
    RANK NUMBERS
 ========================= */
 
@@ -314,6 +438,15 @@ body {
   font-weight: 800;
 }
 
+.entry-one .shot-cap a {
+  color: white;
+  text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+
+.entry-one .shot-cap a:hover {
+  text-decoration-color: white;
+}
+
 /* =========================
    METHOD SECTION
 ========================= */
@@ -361,18 +494,39 @@ body {
   color: var(--color-accent);
 }
 
+/* =========================
+   CREDITS
+========================= */
+
 .credits {
   color: var(--color-accent);
+  line-height: 1.9;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.credits li {
+  margin-bottom: 8px;
 }
 
 .credits a {
   color: var(--color-neutral);
   text-decoration: underline;
   text-decoration-color: var(--color-accent);
+  text-underline-offset: 4px;
+  transition:
+    color 0.3s ease,
+    text-decoration-color 0.3s ease;
 }
 
 .credits a:hover {
   color: var(--color-accent);
+  text-decoration-color: var(--color-neutral);
+}
+
+.credits a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 /* =========================
@@ -394,5 +548,44 @@ body {
 
   .hero-title {
     text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.85);
+  }
+
+  #honorable-mentions .section-support,
+  .list-head .section-support {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  #honorable-mentions .carousel-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .credits {
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .entry-card,
+  .shot img,
+  .btn-primary,
+  .credits a {
+    transition: none;
+  }
+
+  .entry-card:hover,
+  .entry-card:hover .shot img,
+  .btn-primary:hover {
+    transform: none;
   }
 }
